@@ -14,13 +14,13 @@ function Nav () {
     if (width >= 768) setShowSidebar(false);
 
     // disable scroll when sidebar is open
-    document.body.style.overflowY = showSidebar ? "hidden" : "auto";
+    document.body.style.overflow = showSidebar ? "hidden" : "auto";
   }, [showSidebar, width])
 
 
-    return (
+      return (
       <>
-        <nav className="sticky top-0 inset-x-0 py-3 px-5 lg:px-28 bg-primary flex justify-between items-center capitalize shadow-xl z-20">
+        <nav className="fixed top-0 inset-x-0 py-3 px-5 lg:px-28 bg-primary flex justify-between items-center capitalize shadow-xl z-20">
           <a
             href="#"
             className="flex items-center focus:text-cyan-300 focus:outline-none transition"
