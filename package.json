@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "serve out/",
-    "build": "next build && next export"
+    "build": "next build && next export",
+    "dev": "next dev"
   },
   "dependencies": {
     "framer-motion": "^4.1.17",
