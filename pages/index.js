@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
 import Slider from "../components/Slider";
-import Slider2 from "../components/slider2";
+import Slider2 from "../components/Slider2";
 import ReviewSlider from "../components/ReviewSlider";
 
 export default function Home() {
