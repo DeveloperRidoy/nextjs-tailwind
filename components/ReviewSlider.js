@@ -5,12 +5,12 @@ import useWindowDimensions from "../hooks/useWindowDimensions";
 function ReviewSlider({ reviews }) {
   const [review, setreview] = useState(0);
 
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   useEffect(() => setreview(0), [width]);
   return (
     <div>
-      <div className="absolute z-10 top-1/2 left-10 right-10 transform translate-y-10 flex justify-between text-3xl">
+      <div className="absolute z-10 top-1/2 inset-x-0 md:inset-x-10 transform translate-y-10 flex justify-between text-3xl">
         <button
           className="transform focus:outline-none focus:scale-125 focus:ring-2 p-1 rounded-lg transition disabled:text-cyan-700 text-cyan-300"
           disabled={review === 0}
